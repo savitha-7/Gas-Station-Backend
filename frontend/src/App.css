@@ -1,0 +1,100 @@
+/* Global Variables for Colors */
+:root {
+  --primary-color: #6a11cb; /* Matches the gradient start color */
+  --secondary-color: #2575fc; /* Matches the gradient end color */
+  --text-color: #ffffff; /* White text for dark backgrounds */
+  --background-color: #f8f9fa; /* Light background for forms */
+  --button-hover-color: #4e0ba5; /* Darker shade for hover effects */
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use Poppins as the primary font */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Poppins', sans-serif; /* Apply font to buttons */
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover-color);
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Apply font to outline buttons */
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Apply font to cards */
+}
+
+/* Input Group Styling */
+.input-group-text {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  font-family: 'Poppins', sans-serif; /* Apply font to input group text */
+}
+
+/* Form Labels */
+.form-label {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Apply font to form labels */
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Apply font to links */
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--primary-color) !important;
+  font-family: 'Poppins', sans-serif; /* Apply font to utility classes */
+}
+
+.text-muted {
+  color: #6c757d !important;
+  font-family: 'Poppins', sans-serif; /* Apply font to utility classes */
+}
+
+.app-main-bg {
+    min-height: 100vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
